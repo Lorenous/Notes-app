@@ -12,9 +12,10 @@ class CustomTextFeild extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      onSubmitted: (value) {},
       cursorColor: Colors.white,
       cursorWidth: 1,
-      maxLines: maxLines,
+      maxLines: maxLines ?? 1,
       decoration: InputDecoration(
         hintText: hintText,
         hintStyle: const TextStyle(color: Colors.cyanAccent),
