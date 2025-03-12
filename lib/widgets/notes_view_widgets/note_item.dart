@@ -13,7 +13,7 @@ class NoteItem extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             ListTile(
-              contentPadding: const EdgeInsets.all(0),
+              contentPadding: EdgeInsets.zero,
               title: const Text(
                 'Flutter tips',
                 style: TextStyle(
