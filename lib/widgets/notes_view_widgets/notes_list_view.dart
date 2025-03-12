@@ -10,7 +10,7 @@ class NotesListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: 10,
-      itemBuilder: (context, index) => NoteItem(),
+      itemBuilder: (context, index) => const NoteItem(),
     );
   }
 }
