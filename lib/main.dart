@@ -17,7 +17,7 @@ class NotesApp extends StatelessWidget {
         fontFamily: 'Poppins',
       ),
       debugShowCheckedModeBanner: false,
-      initialRoute: EditNoteView.routeName,
+      initialRoute: NotesView.routeName,
       routes: {
         NotesView.routeName: (context) => const NotesView(),
         EditNoteView.routeName: (context) => const EditNoteView(),
