@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notes_app/widgets/notes_view_widgets/add_item_button.dart';
-import 'package:notes_app/widgets/notes_view_widgets/custom_text_feild.dart';
+import 'package:notes_app/widgets/custom_text_feild.dart';
 
 class AddItemBottomSheet extends StatelessWidget {
   const AddItemBottomSheet({super.key});
