@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
-class AddItemButton extends StatelessWidget {
+class AddNoteButton extends StatelessWidget {
   final void Function()? onPressed;
-  const AddItemButton({
+  final bool isLoading;
+  const AddNoteButton({
     super.key,
     required this.onPressed,
+    this.isLoading = false,
   });
 
   @override
@@ -18,7 +20,15 @@ class AddItemButton extends StatelessWidget {
           backgroundColor: Colors.cyanAccent,
           foregroundColor: Colors.black,
         ),
-        child: const Text('Add'),
+        child: isLoading
+            ? const SizedBox(
+                width: 24,
+                height: 24,
+                child: CircularProgressIndicator(
+                  color: Colors.black,
+                ),
+              )
+            : const Text('Add'),
       ),
     );
   }
