@@ -19,9 +19,12 @@ class AddNoteBottomSheet extends StatelessWidget {
             if (state is AddNoteSuccess) Navigator.pop(context);
           },
           builder: (context, state) {
-            return const Padding(
-              padding: EdgeInsets.symmetric(vertical: 32, horizontal: 16),
-              child: AddNoteForm(),
+            return AbsorbPointer(
+              absorbing: state is AddNoteLoading ? true : false,
+              child: const Padding(
+                padding: EdgeInsets.symmetric(vertical: 32, horizontal: 16),
+                child: AddNoteForm(),
+              ),
             );
           },
         ),
