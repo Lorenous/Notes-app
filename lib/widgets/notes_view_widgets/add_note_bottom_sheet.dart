@@ -16,7 +16,7 @@ class AddNoteBottomSheet extends StatelessWidget {
             if (state is AddNoteFailure) {
               debugPrint('Failed in ${state.errMessage}');
             }
-            if (state is AddNoteSuccess) debugPrint('Succsesseses');
+            if (state is AddNoteSuccess) Navigator.pop(context);
           },
           builder: (context, state) {
             return const Padding(
