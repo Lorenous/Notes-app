@@ -52,7 +52,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
                         title: title!,
                         subTitle: subTitle!,
                         date: formattedDate,
-                        color: Colors.blue.value);
+                        color: Colors.blue.hashCode);
                     BlocProvider.of<AddNoteCubit>(context).addNote(note);
                   } else {
                     setState(() {
