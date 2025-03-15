@@ -11,7 +11,12 @@ class NoteItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => Navigator.pushNamed(context, EditNoteView.routeName),
+      onTap: () => Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => EditNoteView(note: note),
+        ),
+      ),
       child: Card(
         color: Color(note.color),
         child: Padding(

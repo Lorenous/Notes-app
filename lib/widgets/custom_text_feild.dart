@@ -3,12 +3,14 @@ import 'package:flutter/material.dart';
 class CustomTextFeild extends StatelessWidget {
   final String hintText;
   final int? maxLines;
+  final void Function(String)? onChanged;
   final void Function(String?)? onSaved;
   const CustomTextFeild({
     super.key,
     required this.hintText,
     this.maxLines,
     this.onSaved,
+    this.onChanged,
   });
 
   @override
@@ -21,6 +23,7 @@ class CustomTextFeild extends StatelessWidget {
           return null;
         }
       },
+      onChanged: onChanged,
       onSaved: onSaved,
       cursorColor: Colors.white,
       cursorWidth: 1,
