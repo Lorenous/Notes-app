@@ -16,11 +16,9 @@ class _ColorsListViewState extends State<ColorsListView> {
   List<Color> colors = const [
     Color(0xff219ebc),
     Color(0xff8ecae6),
-    Color(0xff023047),
     Color(0xffffb703),
     Color(0xfffb8500),
     Color(0xffe9c46a),
-    Color(0xff264653),
     Color(0xff2a9d8f),
   ];
   @override
